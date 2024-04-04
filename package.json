@@ -1,0 +1,80 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@hcaptcha/react-hcaptcha": "^1.9.3",
+    "@iconify/react": "^4.1.1",
+    "@material-tailwind/react": "^2.1.9",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.6",
+    "@rainbow-me/rainbowkit": "^1.3.3",
+    "@react-oauth/google": "^0.12.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.69",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "aws-sdk": "^2.1532.0",
+    "axios": "^1.6.5",
+    "buttercms": "^1.2.15",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.3.1",
+    "google-login-react": "^0.2.17",
+    "http-proxy-middleware": "^2.0.6",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "nft.storage": "^7.1.1",
+    "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.4",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-player": "^2.15.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.4",
+    "serve": "^14.2.1",
+    "socket.io-client": "^4.7.4",
+    "typescript": "^4.9.5",
+    "viem": "^1.19.11",
+    "wagmi": "^1.4.12",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-lazy-load-image-component": "^1.6.3",
+    "tailwindcss": "^3.4.0"
+  }
+}

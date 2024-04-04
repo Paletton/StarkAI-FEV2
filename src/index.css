@@ -1,0 +1,342 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+dialog {
+  padding: auto !important;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-links a {
+  border: 1px solid #5e5a5a;
+  margin: 6px 6px;
+  border-radius: 6px;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+  position: relative;
+}
+.social-links a:hover {
+  color: #d5e4e1;
+}
+.social-links a:hover::before {
+  transform: scale(1);
+}
+.social-links a::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg, #ee61e2, #5640b8);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transform: scale(0);
+  transition: all 0.2s ease;
+}
+
+.social-links a img {
+  position: relative;
+  z-index: 9;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeftAnim;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes fadeInLeftAnim {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.anim-height {
+  animation-name: fromTopToBottom;
+  animation-duration: 0.3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes fromTopToBottom {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+.animate-delay-600 {
+  animation-delay: 0.6s;
+}
+.animate-delay-700 {
+  animation-delay: 0.7s;
+}
+.animate-delay-800 {
+  animation-delay: 0.8s;
+}
+.animate-delay-900 {
+  animation-delay: 0.9s;
+}
+.animate-delay-1000 {
+  animation-delay: 1s;
+}
+.animate-delay-1100 {
+  animation-delay: 1.1s;
+}
+.animate-delay-1200 {
+  animation-delay: 1.2s;
+}
+.animate-delay-1300 {
+  animation-delay: 1.3s;
+}
+
+@keyframes fromWhite {
+  0% {
+    color: #9013ce;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.anim-color {
+  animation-name: fromWhite;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.bg_blur {
+  z-index: 1;
+  left: -450px;
+  position: absolute;
+  top: -550px;
+  background-color: rgba(214, 81, 169, 0.2);
+  width: 900px;
+  height: 900px;
+  filter: blur(250px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgb(105, 105, 105);
+}
+::-webkit-scrollbar-track {
+  width: 10px;
+  background: transparent;
+}
+.bg_blur_news {
+  z-index: 1;
+  left: calc(50% - 300px);
+  position: absolute;
+  top: -750px;
+  background-color: rgba(214, 81, 169, 0.2);
+  width: 100%;
+  height: 900px;
+  filter: blur(150px);
+}
+
+#brxe-budbix {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.css-jx1sa5-MuiSlider-thumb {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.css-22jxwj-MuiPaper-root-MuiDialog-paper {
+  max-width: none !important;
+  width: auto !important;
+  background-color: transparent !important;
+  padding: 32px;
+  height: 100% !important;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  height: 100% !important;
+  width: auto !important;
+  max-width: calc(100% - 200px) !important;
+  background-color: #282c34 !important;
+  padding: 0px 0px !important;
+  border-radius: 8px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    max-height: 100% !important;
+    height: auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+    background-color: #282c34 !important;
+    padding: 0px 0px !important;
+    border-radius: 8px !important;
+  }
+}
+
+.sort-dropdown {
+  visibility: visible;
+  --popper-transform-origin: top left;
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate(32px, 76px);
+  width: 144px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-spinner {
+  animation: spin 1s linear infinite;
+}
+
+.aspect-ratio-box {
+  width: 100%; /* Use desired width, or 100% to fill container */
+  position: relative;
+}
+
+.aspect-ratio-box::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* (9 / 16) * 100% for 16:9 aspect ratio */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#rotate-board {
+  animation: rotate 2s linear infinite; /* Adjust time as needed */
+  background: linear-gradient(45deg, #ee61e2, #5640b8);
+}
+
+#rotate-board img {
+  animation: rotate 2s linear infinite reverse;
+}
+
+.white-blur-effect {
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+}
+
+@keyframes ping {
+  75%,
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+.animate-pulse {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.bg-custom-violet-20 {
+  background-color: rgba(255, 0, 96, 0.2);
+}
+.bg-custom-violet-30 {
+  background-color: rgba(251, 62, 137, 0.2);
+}
+.bg-custom-violet-40 {
+  background-color: rgba(255, 126, 170, 0.2);
+}
+
+.filter-button-color.active {
+  background: linear-gradient(96deg, #dd00ac -19.73%, #7064e9 103.7%);
+}
+
+.filter-button-color {
+  background: #242324;
+}
+.filter-button-color.active:hover {
+  background: #dd00ac;
+}
+.filter-button-color:hover {
+  background: #7064e9;
+}
+
+.gradient-create-art-button {
+  background: linear-gradient(90deg, #d804ae 0%, #7a5ae3 100%);
+}
+
+.gradient-create-art-button:hover {
+  background: linear-gradient(90deg, #d804ae 0%, #6d54c2 100%);
+}
